@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Blog
-permalink: /blog/
+title: Writing
+permalink: /writing/
 ---
 
 <h1 class="page-heading">Posts</h1>
@@ -17,5 +17,3 @@ permalink: /blog/
       </li>
     {% endfor %}
   </ul>
-
-This is the blog
