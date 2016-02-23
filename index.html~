@@ -1,50 +1,23 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>sdhiaeddine</title>
+---
+layout: default
+---
+ 
+<div class="home">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Dhiaeddine Saadi</h1>
+<h1 class="page-heading">Posts</h1>
 
-	<ul class="list-unstyled">
-        <li><b><i class="fa fa-twitter"></i>&nbsp;:</b> <a href="http://twitter.com/sdhiaeddine" class=""> @sdhiaeddine</a></li>
-        <li><b><i class="fa fa-github"></i>&nbsp;:</b> <a href="http://github.com/sdhiaeddine" class=""> sdhiaeddine</a></li>
-	</ul>
+<ul class="post-list">
+{% for post in site.posts %}
+<li>
+ <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-      </header>
-      <section>
-        <h1>
-<a id="header-1" class="anchor" href="#header-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Header 1</h1>
-
-<ul>
-<li>list1</li>
-<li>list2</li>
+ <h2>
+   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+ </h2>
+</li>
+{% endfor %}
 </ul>
 
-<h2>
-<a id="header-2" class="anchor" href="#header-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Header 2</h2>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<pre><code>TextView tv;
-
-tv.setText("Yo!");
-</code></pre>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+</div>
