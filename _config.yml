@@ -7,22 +7,7 @@
 
 # Site settings
 title: sdhiaeddine
-author :
-  name : sugeng tigefa
-  email : tigefa@gmail.com
-  tumblr: tigefa
-  flickr: tigefa
-  github : tigefa4u
-  repository: tigefa4u.github.io
-  gittip: tigefa
-  twitter : tigefa_team
-  facebook: tigefa.team
-  feedburner : tigefa4ugithub
-  linkedin: tigefadotinfo
-  googleplus: tigefa
-  pinterest: tigefa
-  bitbucket: tigefa4u
-  stackoverflow: tigefa
+
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Salem world! This is Dhiaeddine Saadi, you are most welcome :)
